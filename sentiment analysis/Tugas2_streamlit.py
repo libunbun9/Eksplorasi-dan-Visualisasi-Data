@@ -4,7 +4,7 @@ st.title("Sentiment Analysis")
 st.markdown("First of all, Data from X (used to be called twitter) was scrapped using tweepy packages. The data was  about 50 sentiment of manchester city. ")
 
 import pandas as pd
-tweets = pd.read_csv(r""C:\Users\yippi\Documents\kuliah ali\7_visual data\pep.csv"")
+tweets = pd.read_csv(r'C:\Users\yippi\Documents\kuliah ali\7_visual data\pep.csv')
 st.dataframe(tweets)
 st.caption("Scrapped from twitter")
 
