@@ -54,7 +54,7 @@ df.to_csv("strangerthings.csv")
 st.code(code_tweepy)
 
 import pandas as pd
-st_ = pd.read_csv("C:/Users/yippi/Documents/kuliah ali/7_visual data/strangerthings.csv")
+st_ = pd.read_csv("strangerthings.csv")
 st.dataframe(st_)
 
 st.header('Preprocessing Data')
@@ -112,7 +112,7 @@ plt.show()
 
 st.code(code_wordcloud)
 
-st.image(r"C:\Users\yippi\OneDrive\Pictures\Screenshots\Screenshot 2024-12-17 170831.png")
+st.image("wordcloud.png")
 
 st.markdown('''
 Dari hasil wordcloud, lumayan banyak kata-kata yang sering muncul, seperti rt, wrap party, filming dan stranger things. untuk rt sepertinya merupakan retweet dari twitter. Dari tweets ini, bisa dikatakan bahwa fans stranger things menunggu season terbarunya keluar. bisa dilihat dari kata filming, spoiler, photos, spotted dan graduation scene. Pada fans terlihat menunggu season terkahir dari stranger things. Pada wordcloud juga terdapat nama-nama actor yang memainkan stranger things season 5, seperti finn wolfhard, noah schnapp dan sadie sink. Ditemukan juga kata shipper untuk para aktor, seperti sink caleb.
@@ -202,7 +202,7 @@ print("Classification Report:")
 print(classification_report(y_test, y_pred))
 '''
 st.code(code_10)
-st.image(r"C:\Users\yippi\OneDrive\Pictures\Screenshots\Screenshot 2024-12-17 171600.png")
+st.image("evaluation.png")
 
 st.markdown('''
 Akurasi model adalah 89,56%. Model true positive adalah 88,21%. Semua prediksi true positive dalam set uji adalah 91,16%. Skor f1 adalah 0,8966.
@@ -237,7 +237,7 @@ st[['clean_review','predicted_sentiment']]
 
 st.code(code_11)
 
-predict = pd.read_csv(r"C:\Users\yippi\Documents\kuliah ali\7_visual data\st_predict.csv")
+predict = pd.read_csv("st_predict.csv")
 st.dataframe(predict[['clean_review','predicted_sentiment']])
 
 sentiment_counts = predict['predicted_sentiment'].value_counts()
