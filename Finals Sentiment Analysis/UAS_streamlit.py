@@ -112,7 +112,7 @@ plt.show()
 
 st.code(code_wordcloud)
 
-st.image("wordcloud.png")
+st.image("worldcloud.png")
 
 st.markdown('''
 Dari hasil wordcloud, lumayan banyak kata-kata yang sering muncul, seperti rt, wrap party, filming dan stranger things. untuk rt sepertinya merupakan retweet dari twitter. Dari tweets ini, bisa dikatakan bahwa fans stranger things menunggu season terbarunya keluar. bisa dilihat dari kata filming, spoiler, photos, spotted dan graduation scene. Pada fans terlihat menunggu season terkahir dari stranger things. Pada wordcloud juga terdapat nama-nama actor yang memainkan stranger things season 5, seperti finn wolfhard, noah schnapp dan sadie sink. Ditemukan juga kata shipper untuk para aktor, seperti sink caleb.
