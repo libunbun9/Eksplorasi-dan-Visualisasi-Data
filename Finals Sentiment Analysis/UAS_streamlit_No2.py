@@ -240,7 +240,22 @@ st.code(code_11)
 predict = pd.read_csv("st_predict.csv")
 st.dataframe(predict[['clean_review','predicted_sentiment']])
 
+sentiment_counts = predict['predicted_sentiment'].value_counts()
 
+# Extract counts for positive and negative sentiments
+negative_count = sentiment_counts.get(0, 0)
+positive_count = sentiment_counts.get(1, 0)
+
+import plotly.express as px
+# Define labels and values for the pie chart
+labels = [f'Negative (0): {negative_count}', f'Positive (1): {positive_count}']
+sizes = [negative_count, positive_count]
+fig = px.pie(values=sizes, names=labels)
+fig.update_layout(
+    title = "Sentiment Distribution of Stranger Things 5"
+)
+
+st.plotly_chart(fig, use_container_width=True)
 
 st.markdown('''
 
